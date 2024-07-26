@@ -130,7 +130,7 @@ void ZoneDifficulty::LoadMapDifficultySettings()
             }
             if ((mode & MODE_HARD) != MODE_HARD && (mode & MODE_NORMAL) != MODE_NORMAL)
             {
-                LOG_ERROR("module", "MOD-ZONE-DIFFICULTY: Invalid mode {} used in Enabled for mapId {}, ignored.", mode, mapId);
+                LOG_WARN("module", "MOD-ZONE-DIFFICULTY: Invalid mode {} used in Enabled for mapId {}, ignored.", mode, mapId);
             }
 
             // duels do not check for phases. Only 0 is allowed.
